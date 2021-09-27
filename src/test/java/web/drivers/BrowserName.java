@@ -1,5 +1,6 @@
 package web.drivers;
 
+// Имена браузеров
 public enum BrowserName {
     // Имена браузеров
     CHROME("chrome"),   // Google Chrome
@@ -19,7 +20,7 @@ public enum BrowserName {
         return String.valueOf(this.browserName);
     }
 
-    // Возврат значения константы по строковому значению константы
+    // Возврат константы по строковому значению константы
     public static BrowserName fromString(String browserName) {
         if (browserName != null) {
             for(BrowserName b : BrowserName.values()) {

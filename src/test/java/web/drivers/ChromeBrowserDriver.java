@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 
+// Драйвера браузера "Google Chrome"
 public class ChromeBrowserDriver {
     // Получение экземпляра драйвера браузера "Google Chrome"
     public static WebDriver getDriver() {
@@ -23,7 +24,7 @@ public class ChromeBrowserDriver {
         // - режим "Инкогнито"
         options.addArguments("--incognito");
         // - режим "Полный экран"
-        options.addArguments("--start-fullscreen");
+        options.addArguments("--start-maximized");
 
         // Новый экземпляр драйвера
         return new ChromeDriver(options);
