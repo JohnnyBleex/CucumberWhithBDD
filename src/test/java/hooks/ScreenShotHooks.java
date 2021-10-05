@@ -36,7 +36,7 @@ public class ScreenShotHooks {
             Screenshot screenshot = new AShot().takeScreenshot(WebDriverFactory.getCurrentDriver());
             String name = scenario.getName() + "-" + Timestamp.from(Instant.now()).getTime() + ".png";
             ImageIO.write(screenshot.getImage(), "png",
-                    new File("temp\\" + name));
+                    new File("target\\" + name));
             logger.info("Скриншот сохранен в файле [temp\\" + name + "]");
         } catch (IOException e) {
             e.printStackTrace();
